@@ -38,7 +38,7 @@ module getIns_module(
 	
 	RAM_instruction inst_memory (
 		.clka(clk), // input clka
-		.wea(1), // always read, put zero into we
+		.wea(0), // always read, put zero into we
 		.addra(PC[7:2]), // input [5 : 0] addra
 		.dina(0), // no write
 		.douta(inst_code) // inst_code
